@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Мета-теги безопасности -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://cdnjs.cloudflare.com/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdnjs.cloudflare.com/; font-src 'self' https://fonts.gstatic.com/ https://cdnjs.cloudflare.com/; img-src 'self' data:; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <title>Kostiantyn Vundervald | Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google reCAPTCHA v3 -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">KV</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Обо мне</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Проекты</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Kostiantyn <span>Vundervald</span></h1>
+                <h2 class="hero-subtitle">Frontend Developer</h2>
+                <p class="hero-text">Создаю чистые, элегантные и функциональные веб-приложения с использованием современных технологий.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Связаться со мной</a>
+                    <a href="assets/resume.pdf" class="btn btn-outline" download>Скачать резюме</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-img">
+                    <img src="images/image_author.png" alt="Kostiantyn Vundervald" class="profile-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Кто я</h3>
+                    <div class="text-content">
+                        <p>
+                            Привет! Я Костянтин Вундервальд, frontend-разработчик и студент из Бохума, Германия.
+                            Я увлекаюсь чистым кодом и удобными интерфейсами, сочетая технические знания 
+                            с творческим подходом к решению проблем.
+                        </p>
+                        <p>
+                            С прочной основой в таких языках программирования, как Java и Python, а также
+                            с опытом работы с frontend-технологиями, я постоянно расширяю свои навыки для создания
+                            лучших веб-приложений.
+                        </p>
+                        <p>
+                            В настоящее время я получаю образование в Германии, параллельно работая над личными проектами
+                            для применения полученных знаний и изучения новых технологий.
+                        </p>
+                    </div>
+
+                    <h3>Языки</h3>
+                    <div class="languages-grid">
+                        <div class="language-item">
+                            <span class="language-name">Русский:</span>
+                            <span class="language-level">Родной</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Украинский:</span>
+                            <span class="language-level">Родной</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Немецкий:</span>
+                            <span class="language-level">C1</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Английский:</span>
+                            <span class="language-level">B2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-details">
+                    <h3>Навыки</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-microsoft"></i>
+                            <span>Microsoft Office</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>Cursor AI</span>
+                        </div>
+                    </div>
+
+                    <h3>Образование</h3>
+                    <div class="education-timeline">
+                        <div class="education-item">
+                            <div class="education-year">2025</div>
+                            <div class="education-info">Erfolgreiches Abitur</div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-year">2024</div>
+                            <div class="education-info">Vorstudienkurs Studienkolleg in Bochum</div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-year">2023-2024</div>
+                            <div class="education-info">Vorkurs Studienkolleg in Bochum</div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-year">2020-2022</div>
+                            <div class="education-info">10-11. Klasse, allgemeine vollständige Mittelschulbildung, «Dnipropetrowsker Gebietsinternat Lyzeum für physikalisches und mathematisches Profil», Dnipro, Ukraine</div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-year">2015-2020</div>
+                            <div class="education-info">5-9. Klasse, mittlere Grundallgemeinbildung, «Dnipropetrowsker Internat Lyzeum für physikalisches und mathematisches Profil» & «Allgemeinbildende Sekundarschule Nr. 10», Marganez, Ukraine</div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-year">2010-2014</div>
+                            <div class="education-info">1-4. Klasse Grundschule, Allgemeinbildende Sekundarschule Nr. 10, Marganez, Ukraine</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">Мои проекты</h2>
+            <p class="section-description">
+                Вот некоторые из моих недавних проектов. Каждый из них представляет собой 
+                уникальную задачу и опыт обучения.
+            </p>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">PF</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Персональное портфолио</h3>
+                        <p class="project-description">
+                            Современный, адаптивный сайт-портфолио, созданный с использованием чистого HTML, CSS и JavaScript.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">WA</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Погодное приложение</h3>
+                        <p class="project-description">
+                            Приложение для прогноза погоды, которое получает данные из API и отображает текущую погоду и прогнозы.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">API</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">TM</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Менеджер задач</h3>
+                        <p class="project-description">
+                            Простое приложение для управления задачами с операциями CRUD и локальным хранилищем.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">LocalStorage</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-more">
+                <a href="https://github.com/" target="_blank" class="btn btn-outline">
+                    Больше на GitHub <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Связаться со мной</h2>
+            <p class="section-description">
+                Есть вопрос или хотите работать вместе? Не стесняйтесь связываться со мной через 
+                форму ниже или используя мои контактные данные.
+            </p>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Контактная информация</h3>
+                    <div class="contact-details">
+                        <a href="mailto:kostantinvundervald@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>kostantinvundervald@gmail.com</span>
+                        </a>
+                        <a href="tel:+491608453752" class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+49 160 8453752</span>
+                        </a>
+                        <a href="https://maps.google.com/?q=Bochum,Germany" target="_blank" class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bochum, Germany</span>
+                        </a>
+                    </div>
+
+                    <h3>Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://t.me/" target="_blank" class="social-link">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form" autocomplete="off" novalidate>
+                        <!-- CSRF токен -->
+                        <input type="hidden" id="csrf_token" name="csrf_token">
+                        
+                        <div class="form-group">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" name="name" required placeholder="Ваше имя" maxlength="100" pattern="[A-Za-zА-Яа-яЁёІіЇїЄєҐґ\s]{2,100}">
+                            <div class="error-message" id="nameError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Ваш email" maxlength="100">
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Ваше сообщение" maxlength="1000"></textarea>
+                            <div class="error-message" id="messageError"></div>
+                        </div>
+
+                        <!-- Honeypot для защиты от ботов -->
+                        <div class="form-group" style="display:none">
+                            <label for="website">Вебсайт</label>
+                            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <!-- reCAPTCHA v3 -->
+                        <div id="recaptcha-container"></div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span class="btn-text">Отправить сообщение</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <div id="formSuccess" class="form-success">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Сообщение отправлено! Спасибо за обращение.</p>
+                            <button id="sendAnotherBtn" class="btn btn-secondary">Отправить еще</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">&copy; <span id="year"></span> Kostiantyn Vundervald. Все права защищены.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://t.me/" target="_blank" class="social-link">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top" aria-label="Вернуться наверх">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="scripts/translations.js"></script>
+    <script src="scripts/i18n.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html> 
